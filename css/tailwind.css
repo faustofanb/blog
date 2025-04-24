@@ -173,3 +173,17 @@ input:-webkit-autofill:focus {
   display: inline-block;
   vertical-align: middle;
 }
+
+/*!* 在你的 tailwind.css 或 globals.css 文件末尾添加 *!*/
+/*.mermaid-container svg {*/
+/*  fill: currentColor !important; !* 使用当前文本颜色 *!*/
+/*}*/
+
+/*!* 或者更具体地针对文本 *!*/
+/*.mermaid-container svg text {*/
+/*  fill: var(--color-primary-500) !important; !* 亮色模式下的颜色 *!*/
+/*}*/
+
+/*[data-theme='dark'] .mermaid-container svg text {*/
+/*  fill: var(--color-primary-500) !important; !* 暗色模式下的颜色 *!*/
+/*}*/
