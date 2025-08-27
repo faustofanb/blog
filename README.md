@@ -1,3 +1,23 @@
+## minetty (educational, Netty-like, Java 8)
+
+An educational, minimal, no-dependency networking framework inspired by Netty, targeting Java 8.
+
+Goals:
+- Clear separation of responsibilities
+- Functional style where practical (Java 8 lambdas, `CompletableFuture`-like interfaces but homegrown)
+- No third-party runtime dependencies
+
+Modules (high-level):
+- buffer: `ByteBuf`
+- concurrency: `Future`, `Promise`, `EventLoop`
+- channel: `Channel`, `ChannelPipeline`, `ChannelHandler`
+- bootstrap: client/server bootstrapping
+
+Build
+```bash
+./gradlew build
+```
+
 ![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
 
 # Tailwind Nextjs Starter Blog
